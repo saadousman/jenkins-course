@@ -15,8 +15,8 @@ job('NodeJS Docker example') {
     steps {
         dockerBuildAndPublish {
             repositoryName('sdousman/node-js-demo')
-            tag('${GIT_REVISION,length=9}')
-            registryCredentials('dockers')
+            tag('may11')
+            registryCredentials('dockercreds')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
